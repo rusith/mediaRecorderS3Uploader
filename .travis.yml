@@ -1,0 +1,19 @@
+dist: trusty
+sudo: required
+language: node_js
+before_script:
+- chmod a+x ./ci/lint.sh
+- chmod a+x ./ci/deploy.sh
+script:
+- "./ci/lint.sh"
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: ./ci/deploy.sh
+  on:
+    branch: dev
+    tags: true

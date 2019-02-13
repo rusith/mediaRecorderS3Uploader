@@ -1,8 +1,13 @@
 {
   "name": "media-recorder-s3-uploader",
   "version": "1.0.0",
-  "description": "A class which will allow you to upload a MediaRecorder to S3 Using S3's MultiPart upload mechanism",
-  "keywords": ["media-recorder", "s3", "upload", "streams"],
+  "description": "A package which will help you to upload a MediaRecorder to S3 Using S3's MultiPart upload mechanism",
+  "keywords": [
+    "media-recorder",
+    "s3",
+    "upload",
+    "streams"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --content-base ./public"
@@ -11,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
+    "tslint": "^5.12.1",
     "typescript": "^3.3.3",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3",
