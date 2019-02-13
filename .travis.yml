@@ -1,6 +1,8 @@
 dist: trusty
 sudo: required
 language: node_js
+node_js:
+  - "10.14.1"
 before_script:
 - chmod a+x ./ci/lint.sh
 - chmod a+x ./ci/deploy.sh
