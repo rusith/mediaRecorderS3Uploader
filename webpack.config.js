@@ -1,9 +1,12 @@
 var path = require("path");
 
 module.exports = {
-  entry: "./MediaRecorderS3Uploader.ts",
+  entry: {
+    MediaRecorderS3Uploader: "./MediaRecorderS3Uploader.ts",
+    index: "./index.ts"
+  },
   output: {
-    filename: "MediaRecorderS3Uploader.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
