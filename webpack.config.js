@@ -10,16 +10,15 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
-    extensions: [ ".webpack.js", ".ts"]
+    extensions: [".webpack.js", ".ts"]
   },
   devtool: 'source-map',
   module: {
-    rules: [
-      {
-        test: /\.ts?$/,
-        use: 'awesome-typescript-loader',
-        exclude: /node_modules/,
-      }
-    ]
+    noParse: [/aws-sdk/],
+    rules: [{
+      test: /\.ts?$/,
+      use: 'awesome-typescript-loader',
+      exclude: /node_modules/,
+    }]
   },
 }
