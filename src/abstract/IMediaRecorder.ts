@@ -1,3 +1,5 @@
 export default interface IMediaRecorder {
-  ondataavailable: () => void
+  ondataavailable: (data: { data: Blob }) => void;
+  mimeType: string;
+  state: string;
 }
