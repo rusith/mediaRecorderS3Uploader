@@ -1,6 +1,5 @@
 import {
-  IMediaRecorderUploader,
-  MediaRecorderUploader
+  MediaRecorderUploader,
 } from "./MediaRecorderS3Uploader";
 
 const up = new MediaRecorderUploader(null);

@@ -6,7 +6,6 @@ module.exports = {
     index: "./index.ts"
   },
   output: {
-    filename: "[name].js",
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {

@@ -26,6 +26,7 @@
   "main": "dist/MediaRecorderS3Uploader.js",
   "types": "dist/MediaRecorderS3Uploader.d.ts",
   "dependencies": {
+    "@types/node": "^11.9.4",
     "aws-sdk": "^2.403.0"
   }
 }
